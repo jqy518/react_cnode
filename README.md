@@ -1,2 +1,0 @@
-# react_cnode
-采用react全家桶开发及cnodeAPI开发cnode社区webApp
