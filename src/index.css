@@ -15,7 +15,9 @@ a{
   color: #4C9ED9;
   text-decoration: none;
 }
-
+.white{
+  color:#fff;
+}
 .nav-link{ 
   width: 100%;
   height: 48px;
@@ -347,6 +349,76 @@ div[data-reactroot]{
    .reply-context p{
     line-height: 1.5rem;
     padding-top: 5px;
+   }
+
+
+   /*weather-page*/
+   .weather-main{
+     width:100%;
+     height: 100%;
+     background:#1C609A;
+   }
+   .weather-head{
+     padding: 20px;
+     font-size: 14px;
+     line-height: 20px;
+     color: #fff;
+   }
+   .air-report{
+     padding: 2px 20px;
+     background: #33C32E;
+   }
+   .week-report-box {
+     display: flex;
+     height: 220px;
+     justify-content: space-between;
+     align-items:stretch;
+   }
+   .week-report-box .item{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, .8)
+   }
+   .week-report-box .item + .item{
+     border-left:1px solid rgba(255, 255, 255, .5); 
+   }
+   .today-report {
+    flex:2;
+   }
+   .today-report .weather-pic{
+     width: 70px;
+     height: 70px;
+   }
+   .other-report{
+     flex: 1;
+   }
+   .temp-box {
+     display: flex;
+     justify-content: center;
+     height: 50px;
+   }
+   .temp-box strong{
+    font-size: 48px;
+    font-family: Arial;
+    text-shadow: 1px 1px 1px #555;
+    color: #fff;
+
+   }
+   .temp-box .right-info{
+    font-size: 14px;
+    line-height: 24px;
+    padding-left:10px; 
+   }
+   .wr-b-info{
+     line-height: 30px;
+     font-size: 14px;
+     text-shadow: 1px 1px 1px #555;
+   }
+   .weather-pic-sm{
+     width: 60px;
+     height: 60px;
    }
 
 

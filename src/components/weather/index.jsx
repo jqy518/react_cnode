@@ -1,9 +1,16 @@
 import React,{ Component } from 'react'
-
+import WeekReport from './WeekReport/WeekReport'
+import Head from './Head'
 class Weather extends Component {
   render(){
+    var watchID = navigator.geolocation.watchPosition(function(position) {
+      console.log(position.coords.latitude+":"+position.coords.longitude);
+    });
     return (
-      <h1>this is Weather page....</h1>
+      <div className="weather-main">
+        <Head />
+        <WeekReport />
+      </div>
     )
   }
 }
