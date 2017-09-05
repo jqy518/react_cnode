@@ -10,6 +10,7 @@ class WeekReport extends Component {
         <NextItem />
         <NextItem />
       </div>
+      
     )
   }
 }
