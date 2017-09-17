@@ -5,6 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import Index from './components/Index'
 import Topic from './components/node/Topic'
+import Login from './components/Login'
 import { Provider } from 'react-redux'
 import reducer from './reducers'
 
@@ -34,9 +35,9 @@ ReactDOM.render(
             <Redirect from='/' exact to = '/home' />
             <Route path="/home"  component = {Index }></Route>
             <Route path="/topic/:id" component = { Topic }></Route>
+            <Route path="/login" component = { Login }></Route>
           </Switch>
      </ConnectedRouter>
   </Provider>
   , document.getElementById('root'));
 registerServiceWorker();
-

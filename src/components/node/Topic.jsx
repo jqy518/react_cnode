@@ -4,11 +4,17 @@ import { Tool } from '../../Tool'
 import axios from 'axios'
 import Loading from '../common/Loading'
 import Replies from './Replies'
+import PropTypes from 'prop-types';
 class Topic extends Component {
+  propTypes:{
+    id:PropTypes.string
+  }
   state={
     id:null,
-    topic:{},
-    loading:false
+    topic:{
+      replies:[]
+    },
+    loading:false,
   }
   componentDidMount(){
     this.setState({id:this.props.id},()=> {
@@ -44,7 +50,7 @@ class Topic extends Component {
         </div>
         <div className="topic-content" dangerouslySetInnerHTML = {{__html:this.state.topic.content}} />
 
-        <Replies />
+        <Replies list={this.state.topic.replies} />
       </div>
     ) 
   }

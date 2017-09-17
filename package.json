@@ -21,6 +21,12 @@
     "loaders.css": "^0.1.2",
     "react-scripts": "1.0.8"
   },
+  "proxy": {
+    "/gps-to-weather": {
+      "target": "http://saweather.market.alicloudapi.com",
+      "auth": "APPCODE 188d33cc566245ab9e508fc2e3e923d1"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
